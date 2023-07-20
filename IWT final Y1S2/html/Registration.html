@@ -1,0 +1,133 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/Registration.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body id="bo">
+    <section class="login">
+        <img src="../image/logo.jpg" width="110px" height="110px">
+        <img src="../image/accpic.png" width="100" height="100" class="accpic">
+        <div class="dropdown" style="float:right;" id="accbtn">
+            <button class="btn btn1" class="dropbtn1">Account</button>
+            <div class="dropdown-content">
+                <a
+                    href="file:///E:/IP%20SEM1/SLIIT/y1%20sem%202/PROJECT/IWT%20project/IWT%20ass2/IWT%20Final%20project%20Dhanushka/HTML/User%20Login.html">User
+                    Login</a>
+                <a href="http://localhost/aAdminpg/">Admin Login</a>
+            </div>
+        </div>
+
+
+        <form method="post" action="../PHP/Registration_db.php" class="form">
+
+            <div class="container">
+                <div class="regform">
+                    <h2>
+                        <center> Registration</center>
+                    </h2>
+                </div>
+
+                <hr>
+                <div class="main">
+                    <center>
+                        <b>First Name:</b><br>
+                        <input type="text" placeholder="Enter First Name" name="fname" required><br>
+
+                        <center>
+                            <b>Last Name:</b> <br>
+                            <input type="text" placeholder="Enter Last Name" name="lname" required>
+                        </center>
+
+                        <center>
+                            <b>User Name:</b><br>
+                            <input type="text" placeholder="Enter User Name" name="uname" required><br>
+                        </center>
+
+                        <center>
+                            <b>E-mail:</b><br>
+                            <input type="email" placeholder="Enter a valid E-mail Address" name="email" required>
+                        </center>
+
+                        <center>
+                            <b>Contact Number:</b><br>
+                            <input type="number" placeholder="Enter your 10 digit Contact Number" pattern="[0-10] {10}"
+                                name="cno"><br>
+                        </center>
+
+                        <center><b><label for="paw" id="password">Password: </label></b><br>
+                            <input type="password" id="password1" style="background-color: #7cc1d6;"
+                                placeholder="Enter Password with more than 8 characters" pattern=".{8,}" name="password"
+                                required> <br />
+                        </center>
+
+                        <b><label for="paw1" id="repaw"> Re-Enter Password: </label></b><br>
+                        <input type="password" id="password2" placeholder="Re-Enter Password" name="reenter"
+                            style="background-color: #7cc1d6;" required> <br />
+                        <label for="Emsg" id="pawEr"> </label><br />
+                        <input type="reset" style="height: 5%; width: 10%; background-color: lightblue;" name="but"
+                            value="clear">
+                        <input type="submit" style="height: 5%; width: 10%; background-color: lightblue;" name="but"
+                            value="submit">
+                    </center>
+        </form>
+        <hr>
+        </div>
+
+        </div>
+    </section>
+    <section class="footer">
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Dmt.gov.lk</h4>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Site map</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>our Forms</h4>
+                        <ul>
+                            <li><a href="#">Vehicle registration</a></li>
+                            <li><a href="#">Driving license</a></li>
+                            <li><a href="#">License renewing</a></li>
+                            <li><a href="#">Online test</a></li>
+                            <li><a href="#">Lost license replacement</a></li>
+                            <li><a href="#">Medical form for learner's license</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>our services</h4>
+                        <ul>
+                            <li><a href="#">License related services</a></li>
+                            <li><a href="#">Vehicle related services</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="#"> <i class="fab fa-facebook-f"></i></a>
+                            <a href="#"> <i class="fab fa-twitter"></i></a>
+                            <a href="#"> <i class="fab fa-instagram"></i></a>
+                        </div>
+                        <ul>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="../css/User Login.css">
+
+	<script type="text/javascript" src="../js/User Login.js">
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body id="bo">
+	<section class="login">
+		<div class="dropdown" style="float:right;" id="accbtn">
+			<button class="btn btn1" class="dropbtn1">Account</button>
+			<div class="dropdown-content">
+				<a href="#">User Login</a>
+				<a href="http://localhost/aAdminpg/">Admin Login</a>
+			</div>
+		</div>
+
+		<div class="container">
+
+			<div class="regform">
+				<h2>
+					<center>User Login Form</center>
+				</h2>
+			</div>
+			<center><button onclick="document.getElementById('id01').style.display='block'" class="log"
+					style="width:auto;">Login</button></center>
+			<hr>
+
+			<div id="id01" class="modal">
+
+				<div class="margin">
+					<form method="POST" action="../PHP/Advertiser Login_db.php">
+						<div>
+							<span onclick="document.getElementById('id01').style.display='none'" class="close"
+								title="Close Modal">&times;</span>
+
+							<div class="container">
+								<div class="main">
+									<center><label for="email"><b>Email</b></label></center>
+									<center><input type="email" placeholder="Enter Email" name="email" required><br>
+									</center>
+
+									<center><label for="psw"><b>Password</b></label></center>
+									<center><input type="password" placeholder="Enter Password" name="password"
+											required><br></center>
+
+									<center><input type="submit" value="Login" class="submit" name="submit"></center>
+									<br>
+
+									<center>
+										<div class="container">
+											<center><button type="button"
+													onclick="document.getElementById('id01').style.display='none'"
+													class="cancelbtn">Cancel</button></center>
+											<span class="fpsw"><a href="Forgot password.html"> Forgot
+													Password</a></span>
+										</div><br>
+									</center>
+
+									<center><input type="checkbox" checked="checked" name="remember"> Remember me next
+										time</center><br>
+
+									<center><a href="../HTML/Registration.html"> Register</a></center>
+								</div>
+							</div>
+							</hr>
+					</form>
+				</div>
+			</div>
+	</section>
+
+
+
+
+
+</body>
+
+</html>

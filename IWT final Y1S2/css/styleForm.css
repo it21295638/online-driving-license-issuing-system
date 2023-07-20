@@ -1,0 +1,48 @@
+@charset"utf-8";
+
+
+.service{
+	background-color:rgb(22, 39, 71);
+}
+h2{
+	font-family:Arial,Helvetica,sans-serif;
+	text-align:center;
+	color: white;
+	
+}
+
+
+
+h4{
+	text-align:center;
+}
+
+
+
+
+.ser-column{
+	flex: 33.33%;
+	border:3px solid black;
+	margin-top:20px;
+	margin-bottom:10px;
+	margin-right:150px;
+	margin-left:100px;
+	padding-top:5px;
+	padding-bottom:3px;
+	padding-left:5px;
+	padding-right:5px;
+	background-color: white
+}
+
+.ser-row{
+	display : flex;
+	
+}
+
+button{
+	background-color: pink;
+}
+
+
+
+
